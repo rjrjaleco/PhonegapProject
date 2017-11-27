@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<script type="text/javascript" src="cordova.js"></script>    
+	<link rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+	
+  <script type="text/javascript"  src="C:\Users\Rene John Jaleco\Documents\PhoneGap\elecMainExpense\www\js\index.js"></script>
+</head>
+<body>
+	<div class="container" >
+		<h2>Expense Monitoring</h2>
+		<form>
+			<div>
+				<label>Date:</label>
+				<p id="date"></p>
+
+				<script>
+					n =  new Date();
+					var months = ["January","February","March","April","May","June","July","August","September", "October","November","December"];
+					y = n.getFullYear();
+					m = months[n.getMonth()];
+					d = n.getDate();
+					document.getElementById("date").innerHTML =  m+" "+d+", "+y;
+				</script>
+			</div>
+			<div class="form-group">
+				<label for="amount">Amount:</label>
+				<input type="number" class="form-control" id="amount" style="width:100%">
+			</div>
+			<div>
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" rows="5" id="comment"  style="width:100%; margin-right:10px;"></textarea>
+			</div>
+			<div>
+				<center>
+					<button type="button" class="btn btn-primary btn-lg" style="width:200px; margin:10px;" onclick="on_save()">Save</button>
+				</center>
+			</div>
+		</form>
+	</div>
+	
+
+</body>
+
+</html>
