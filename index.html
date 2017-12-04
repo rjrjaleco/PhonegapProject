@@ -19,8 +19,8 @@
 		<h2>Expense Monitoring</h2>
 		<form>
 			<div>
-				<label>Date:</label>
-				<p id="date"></p>
+				<label style="font-size:40px">Date:</label>
+				<p style="font-size:20px" id="date"></p>
 
 				<script>
 					n =  new Date();
@@ -32,16 +32,16 @@
 				</script>
 			</div>
 			<div class="form-group">
-				<label for="amount">Amount:</label>
-				<input type="number" class="form-control" id="amount" style="width:100%">
+				<label style="font-size:20px" for="amount">Amount:</label>
+				<input type="number" class="form-control" id="amount" style="width:100%; font-size:20px">
 			</div>
 			<div>
-				<label for="comment">Comment:</label>
-				<textarea class="form-control" rows="5" id="comment"  style="width:100%; margin-right:10px;"></textarea>
+				<label style="font-size:20px" for="comment">Comment:</label>
+				<textarea class="form-control" rows="5" id="comment"  style="width:100%; margin-right:10px; font-size:20px"></textarea>
 			</div>
 			<div>
 				<center>
-					<button type="button" class="btn btn-primary btn-lg" style="width:200px; margin:10px;" onclick="on_save()">Save</button>
+					<button type="button" class="btn btn-primary btn-lg" style="width:200px; margin:10px; font-size:30px" onclick="on_save()">Save</button>
 				</center>
 			</div>
 		</form>
