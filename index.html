@@ -12,14 +12,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 	
-  <script type="text/javascript"  src="C:\Users\Rene John Jaleco\Documents\PhoneGap\elecMainExpense\www\js\index.js"></script>
+  <script type="text/javascript"  src="index.js"></script>
 </head>
 <body>
-	<div class="container" >
-		<h2>Expense Monitoring</h2>
+	<h2 style="background-color:#d4d6d8;color:black;top:0;left:0;width:100%;margin-top:0;margin-bottom:0;height:50px;display:flex;text-align:center;justify-content:center;align-items:center">Expense Monitoring</h2>
+	<div class="container" id="addExpense">
+	<h3 style="font-weight:bold">NEW ENTRY</h3>
 		<form>
+		
 			<div>
-				<label style="font-size:40px">Date:</label>
+				<label style="font-size:20px">Date:</label>
 				<p style="font-size:20px" id="date"></p>
 
 				<script>
@@ -35,18 +37,30 @@
 				<label style="font-size:20px" for="amount">Amount:</label>
 				<input type="number" class="form-control" id="amount" style="width:100%; font-size:20px">
 			</div>
+			
 			<div>
 				<label style="font-size:20px" for="comment">Comment:</label>
 				<textarea class="form-control" rows="5" id="comment"  style="width:100%; margin-right:10px; font-size:20px"></textarea>
 			</div>
-			<div>
-				<center>
-					<button type="button" class="btn btn-primary btn-lg" style="width:200px; margin:10px; font-size:30px" onclick="on_save()">Save</button>
-				</center>
-			</div>
+			
+			<nav class="footer navbar-fixed-bottom" style="margin-top:10px;margin-bottom:10px;width:100%;left:0;bottom:0">
+				<button type="button" class="btn btn-primary btn-lg" style="width:49%; font-size:30px; float:left;margin-right:1px" onclick="on_save()">Save</button>
+				<button type="button" class="btn btn-primary btn-lg" style="width:49%; font-size:30px; float:right; margin-left:1px" onclick="on_cancel()">Cancel</button>
+			</nav>
 		</form>
 	</div>
-	
+	<div class="container" id="mainWindow">
+		<h3>List of Transactions</h3>
+		<div>
+			<select size="10" style="width:100%">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			</select>
+		</div>
+		
+	</div>
 
 </body>
 
